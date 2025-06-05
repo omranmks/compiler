@@ -1,0 +1,4 @@
+Line: 10; Type 'string' is not assignable to type 'boolean'.
+Line: 14; Error: Cannot redeclare block-scoped variable 'flag'.
+Line: 18; Error: Cannot redeclare block-scoped variable 'anotherFlag'.
+Line: 7; Unexpected value 'ProductService' declared by the module 'AppModule'. Please add a @Component annotation.

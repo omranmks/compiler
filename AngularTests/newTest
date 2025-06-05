@@ -1,0 +1,19 @@
+import { Component, Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class ProductService {
+  getProducts(name: string, omran: number): boolean {
+    let flag:boolean = 'string';
+
+    function hey():boolean {
+        let anotherFlag:boolean = true;
+        let flag: boolean = false;
+    }
+    let anotherFlag:boolean = true;
+
+    let anotherFlag = false;
+  }
+}

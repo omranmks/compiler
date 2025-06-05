@@ -1,0 +1,36 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-loop-example',
+  template: `<h1>{{ output }}</h1>`
+})
+export class LoopExampleComponent {
+  output: string = '';
+
+  constructor() {
+    this.runLoops();
+  }
+
+  runLoops() {
+    // For loop
+    let forLoopResult = '';
+    for (let i = 0; i < 5; i++) {
+      forLoopResult += `For loop iteration`;
+    }
+
+    // While loop
+    let i = 0;
+    let whileLoopResult = '';
+    while (i < 5) {
+      whileLoopResult += `While loop iteration`;
+      i++;
+    }
+
+    // For...of loop (array example)
+    const array = ['apple', 'banana', 'cherry'];
+    let forOfLoopResult = '';
+    for (let item of array) {
+      forOfLoopResult += `For-of loop item` ;
+    }
+  }
+}

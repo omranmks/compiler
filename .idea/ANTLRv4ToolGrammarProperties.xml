@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ANTLRv4ToolGrammarProperties">
+    <option name="perGrammarGenerationSettings">
+      <list>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/gen/AngularLexer.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Omran\Documents\IntelliJ\Compiler\OmranProject\src" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/gen/AngularParser.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Omran\Documents\IntelliJ\Compiler\OmranProject\src" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/Angular/gen/AngularLexer.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Omran\Documents\IntelliJ\Compiler\OmranProject\src" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="Angular.gen" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/Angular/gen/AngularParser.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Omran\Documents\IntelliJ\Compiler\OmranProject\src" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="Angular.gen" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/HTML/gen/HTMLLexer.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Omran\Documents\IntelliJ\Compiler\OmranProject\src" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="HTML.gen" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/HTML/gen/HTMLParser.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\Users\Omran\Documents\IntelliJ\Compiler\OmranProject\src" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="HTML.gen" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+      </list>
+    </option>
+  </component>
+</project>

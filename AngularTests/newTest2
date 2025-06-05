@@ -1,0 +1,19 @@
+import { Component, Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+@Component({
+    selector: 'app-product',
+    templateUrl: './product.component.html',
+    styleUrls: ['./product.component.css',]
+})
+export class ProductService {
+    title:string;
+    getProducts(): boolean {
+    let flag:boolean = true;
+    let anotherFlag = false;
+    return false;
+  }
+}

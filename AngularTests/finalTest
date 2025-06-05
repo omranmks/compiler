@@ -1,0 +1,149 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'omran',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <div class="app">
+      <div class="center-container">
+        <!-- Section 1: Product Details -->
+        <div class="section1">
+          <div class="product-details">
+            <div>
+              <h2>{{ productDetails.name }}</h2>
+            </div>
+            <div [class]="getIconClass(productDetails.iconBackgroundColor)">
+              <span>{{ productDetails.icon }}</span>
+            </div>
+            <div>
+              <p>{{ productDetails.description }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Product Cards -->
+        <div class="section2">
+          <div
+            *ngFor="let product of products"
+            (click)="handleClick(product)"
+            class="product-card"
+          >
+            <div>
+              <h2>{{ product.name }}</h2>
+            </div>
+            <div [class]="getIconClass(product.iconBackgroundColor)">
+              <span>{{ product.icon }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  styles: [
+    `
+      .app {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .center-container {
+        display: flex;
+      }
+
+      .section1,
+      .section2 {
+        flex: 1;
+        margin: 10px;
+      }
+
+      .product-card {
+        cursor: pointer;
+        margin: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .product-card div {
+        margin-top: 10px;
+      }
+
+      .product-details {
+        text-align: center;
+      }
+
+      .product-details div {
+        margin-top: 10px;
+      }
+
+      .icon {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon span {
+        font-size: 36px;
+      }
+
+      .gold {
+        background-color: gold;
+      }
+
+      .gray {
+        background-color: gray;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    `
+  ],
+})
+export class OmranComponent {
+  products: { name: string; description: string; icon: string; iconBackgroundColor: string }[] = [];
+  productDetails: { name: string; description: string; icon: string; iconBackgroundColor: string };
+
+  constructor() {
+    this.products = [
+      {
+        name: 'ساعة أندرويد الذكية',
+        description:
+          'ساعة ذكية لهواتف اندرويد، ساعات ذكية تعمل باللمس مع كاميرا، ساعة بلوتوث مع فتحة بطاقة شريحة اتصال متوافقة مع هاتف سامسونج اي او اس 12 12 برو 11 10 للرجال والنساء',
+        icon: '⌚',
+        iconBackgroundColor: 'gold'
+      },
+      {
+        name: 'سماعات الرأس اللاسلكية',
+        description:
+          'سماعات بلوتوث لاسلكية فوق الاذن، بلوتوث 5.3، وقت تشغيل 90 ساعة، 3 اوضاع معادل الصوت، سماعات ستيريو هاي فاي لاسلكية مع ميكروفون، سماعة اذن ناعمة قابلة للطي للجوال/الكمبيوتر (اسود)',
+        icon: '🎧',
+        iconBackgroundColor: 'gray'
+      },
+      {
+        name: 'Nike حذاء رياضي',
+        description: 'نايك حذاء رياضي للرجال',
+        icon: '👟',
+        iconBackgroundColor: 'blue'
+      }
+    ];
+
+    // Set initial productDetails
+    this.productDetails = this.products[0];
+  }
+
+  handleClick(product: any) {
+    this.productDetails = product;
+  }
+
+  // Helper function to return the appropriate class based on background color
+  getIconClass(color: string) {
+    return `icon ${color}`;
+  }
+}

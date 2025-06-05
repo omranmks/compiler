@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-condition-example',
+  template: `<h1>{{ message }}</h1>`
+})
+export class ConditionExampleComponent {
+  message: string = '';
+
+  constructor() {
+    this.checkConditions(5); // Call the method with a test value
+  }
+
+  checkConditions(value: number) {
+    // If-else condition
+    if (value > 10) {
+      this.message = 'Value is greater than 10';
+    } else if (value === 10) {
+      this.message = 'Value is exactly 10';
+    } else {
+      this.message = 'Value is less than 10';
+    }
+    }
+}
